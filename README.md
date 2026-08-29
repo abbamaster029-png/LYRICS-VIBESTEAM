@@ -1,4 +1,3 @@
-<!-- COMPETITION.HTML -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,15 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#03152d">
 
-<title>LVT | Lyrics Competition</title>
+<title>LVT | Live Competition</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -23,93 +20,52 @@
 
 body{
     min-height:100vh;
-    color:white;
-    font-family:Inter,Arial,sans-serif;
-    background:
-        radial-gradient(circle at 50% 20%,#063a86 0%,#031d48 35%,#02132e 72%,#010b1d 100%);
     overflow-x:hidden;
-}
-
-/* BLUE LIGHT EFFECTS */
-
-body:before,
-body:after{
-    content:"";
-    position:fixed;
-    pointer-events:none;
-    z-index:0;
-}
-
-body:before{
-    width:900px;
-    height:900px;
-    left:-430px;
-    top:40px;
-    background:linear-gradient(
-        125deg,
-        transparent 42%,
-        rgba(32,116,255,.30) 47%,
-        transparent 50%
-    );
-    transform:rotate(13deg);
-}
-
-body:after{
-    width:900px;
-    height:900px;
-    right:-450px;
-    top:40px;
-    background:linear-gradient(
-        235deg,
-        transparent 42%,
-        rgba(32,116,255,.30) 47%,
-        transparent 50%
-    );
-    transform:rotate(-13deg);
+    font-family:"Inter",sans-serif;
+    color:#fff;
+    background:
+        radial-gradient(circle at 50% 10%,#073a82 0%,#032352 35%,#03152d 72%);
 }
 
 /* HEADER */
 
 .header{
-    position:relative;
-    z-index:10;
-    height:67px;
-    background:#08090c;
-    border-bottom:2px solid #e6ad25;
+    height:58px;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:0 43px;
+    padding:0 18px;
+    background:#08090c;
+    border-bottom:1px solid #e5ad27;
 }
 
-.logo-name{
+.brand{
     display:flex;
     align-items:center;
-    gap:12px;
-    color:#f2b52a;
-    font-size:24px;
+    gap:8px;
+    color:#f2b52b;
+    font-size:18px;
     font-weight:800;
 }
 
-.trophy{
-    font-size:29px;
+.brand span{
+    font-size:22px;
 }
 
 .menu{
-    width:50px;
-    height:46px;
+    width:42px;
+    height:38px;
     border:1px solid #dca51e;
-    border-radius:10px;
+    border-radius:8px;
     display:flex;
+    flex-direction:column;
     align-items:center;
     justify-content:center;
-    flex-direction:column;
-    gap:6px;
+    gap:5px;
 }
 
 .menu i{
-    display:block;
-    width:28px;
+    width:23px;
     height:2px;
     background:#eab32a;
 }
@@ -117,70 +73,11 @@ body:after{
 /* MAIN */
 
 .main{
-    position:relative;
-    z-index:2;
     width:100%;
-    max-width:1100px;
+    max-width:950px;
     margin:auto;
-    padding:38px 30px 35px;
-}
-
-/* MICROPHONE */
-
-.microphone{
-    position:absolute;
-    right:35px;
-    top:40px;
-    width:180px;
-    height:280px;
-    transform:rotate(12deg);
-    opacity:.95;
-}
-
-.mic-body{
-    position:absolute;
-    left:50px;
-    top:5px;
-    width:82px;
-    height:160px;
-    border:5px solid #c58a19;
-    border-radius:45px;
-    background:
-        radial-gradient(circle,#2272c9 1px,transparent 2px);
-    background-size:7px 7px;
-    box-shadow:
-        inset 0 0 20px #001a46,
-        0 0 25px rgba(30,128,255,.6);
-}
-
-.mic-line{
-    position:absolute;
-    left:67px;
-    top:155px;
-    width:48px;
-    height:95px;
-    border:5px solid #b67a12;
-    border-top:0;
-    border-radius:0 0 35px 35px;
-}
-
-.mic-neck{
-    position:absolute;
-    left:86px;
-    top:225px;
-    width:10px;
-    height:45px;
-    background:#c48a1d;
-}
-
-.mic-base{
-    position:absolute;
-    left:58px;
-    top:263px;
-    width:70px;
-    height:7px;
-    border-radius:10px;
-    background:#d59a1b;
+    padding:25px 16px 28px;
+    position:relative;
 }
 
 /* LVT */
@@ -188,125 +85,95 @@ body:after{
 .lvt{
     text-align:center;
     font-family:"Playfair Display",serif;
-    font-size:clamp(90px,15vw,150px);
+    font-size:clamp(70px,12vw,115px);
     line-height:.85;
-    letter-spacing:5px;
-    color:#f4bd35;
+    letter-spacing:3px;
+    color:#f5bd35;
     text-shadow:
-        0 2px 0 #8c5d08,
-        0 4px 5px #271900,
-        0 0 22px rgba(255,190,40,.55);
+        0 2px 0 #805400,
+        0 0 16px rgba(255,190,40,.45);
 }
 
-/* LAUREL */
-
-.laurel{
-    position:absolute;
-    left:90px;
-    top:70px;
-    color:#e8a91f;
-    font-size:105px;
-    line-height:1;
-    transform:rotate(-20deg);
-}
-
-.laurel.right{
-    left:auto;
-    right:175px;
-    transform:scaleX(-1) rotate(-20deg);
-}
-
-/* TITLE */
-
-.competition-title{
-    position:relative;
-    z-index:2;
+.title{
     text-align:center;
     margin-top:8px;
     font-family:"Playfair Display",serif;
+    font-size:clamp(27px,4vw,43px);
     color:#f2b82d;
-    font-size:clamp(34px,5vw,58px);
     line-height:1;
-    text-shadow:0 3px 5px #000;
 }
 
 /* DATE */
 
 .date{
     width:max-content;
-    margin:17px auto 0;
-    padding:7px 40px;
-    border:1.5px solid #e9ad25;
-    border-radius:11px;
+    margin:14px auto 0;
+    padding:6px 28px;
+    border:1px solid #e7ad25;
+    border-radius:9px;
     color:#f3b62c;
-    font-size:32px;
+    font-size:25px;
     font-weight:800;
-    background:rgba(2,16,38,.55);
 }
 
 /* STARS */
 
 .stars{
     text-align:center;
-    margin:10px 0 15px;
+    margin:8px 0 12px;
     color:#f1b62b;
-    font-size:27px;
-    letter-spacing:5px;
+    font-size:21px;
+    letter-spacing:4px;
 }
-
-/* DESCRIPTION */
 
 .description{
     text-align:center;
-    font-size:19px;
-    line-height:1.55;
-    color:#f2f2f2;
+    font-size:16px;
+    line-height:1.45;
 }
 
-/* LIVE LABEL */
+/* LIVE */
 
 .live-box{
-    position:relative;
-    width:min(500px,90%);
-    margin:27px auto -1px;
-    padding:9px 20px;
+    width:min(450px,90%);
+    margin:20px auto -1px;
+    padding:7px 15px;
     text-align:center;
     color:#f2b62b;
-    font-size:23px;
+    font-size:18px;
     font-weight:800;
-    border:1.5px solid #e5ac25;
-    border-radius:17px;
-    background:#06224a;
-    z-index:5;
+    border:1px solid #e5ac25;
+    border-radius:14px;
+    background:#06234b;
+    position:relative;
+    z-index:3;
 }
 
-.live-circle{
+.live-dot{
     display:inline-block;
-    width:20px;
-    height:20px;
-    margin-right:9px;
+    width:15px;
+    height:15px;
+    margin-right:7px;
     vertical-align:-2px;
     background:#f2b52b;
     border-radius:50%;
 }
 
-/* TABLE OUTER */
+/* TABLE */
 
 .table-card{
     width:92%;
     margin:auto;
-    padding:0 18px 17px;
-    border:2px solid #dda91e;
-    border-radius:16px;
-    background:rgba(2,22,49,.82);
+    padding:0 13px 13px;
+    border:1.5px solid #dda91e;
+    border-radius:13px;
+    background:rgba(2,22,49,.84);
 }
-
-/* TABLE */
 
 .table-wrap{
     overflow:hidden;
-    border:1.5px solid #e3ad25;
-    border-radius:14px;
+    border:1px solid #e3ad25;
+    border-radius:11px;
 }
 
 table{
@@ -316,25 +183,26 @@ table{
 }
 
 thead th{
-    height:48px;
+    height:40px;
     color:#efb62a;
-    font-size:18px;
+    font-size:14px;
+    font-weight:700;
     border-bottom:1px solid #d9a21c;
 }
 
-thead th:nth-child(1){
+thead th:first-child{
     width:14%;
 }
 
-thead th:nth-child(3){
-    width:19%;
+thead th:last-child{
+    width:18%;
 }
 
 tbody td{
-    height:52px;
-    border-right:1px solid rgba(221,174,45,.30);
-    border-bottom:1px solid rgba(221,174,45,.28);
+    height:43px;
     text-align:center;
+    border-right:1px solid rgba(221,174,45,.25);
+    border-bottom:1px solid rgba(221,174,45,.25);
 }
 
 tbody tr:last-child td{
@@ -347,204 +215,184 @@ tbody td:last-child{
 
 .rank{
     color:#f0b62a;
-    font-size:23px;
+    font-size:17px;
     font-weight:800;
 }
 
-.name-box{
-    width:90%;
-    height:35px;
+/* LIST STYLE LIKE THE IMAGE */
+
+.contestant{
+    width:88%;
+    height:32px;
     margin:auto;
-    border:1px solid rgba(172,181,194,.55);
-    border-radius:8px;
-    background:rgba(2,14,31,.70);
+    border:1px solid rgba(158,171,191,.55);
+    border-radius:7px;
+    background:rgba(2,14,31,.65);
+    display:flex;
+    align-items:center;
+    padding:0 8px;
 }
 
-.name-box input{
+.contestant input{
     width:100%;
-    height:100%;
     border:0;
     outline:0;
     background:transparent;
-    color:white;
+    color:#fff;
     text-align:center;
-    font-size:14px;
+    font-family:"Inter",sans-serif;
+    font-size:12px;
 }
 
-.points-box{
-    width:70px;
-    height:35px;
-    margin:auto;
-}
-
-.points-box input{
-    width:100%;
-    height:100%;
-    border:0;
-    outline:0;
-    background:transparent;
-    color:#f3b82d;
-    text-align:center;
-    font-size:20px;
+.points{
+    color:#f2b72c;
+    font-size:16px;
     font-weight:700;
 }
 
-/* INFO */
+/* INFO BAR */
 
 .info{
     width:92%;
-    margin:16px auto 0;
-    padding:19px 22px;
-    border:2px solid #dfa820;
-    border-radius:14px;
+    margin:14px auto 0;
+    padding:13px 14px;
+    border:1.5px solid #dfa820;
+    border-radius:11px;
     background:rgba(3,24,50,.88);
     display:grid;
     grid-template-columns:repeat(4,1fr);
 }
 
 .info-item{
+    min-height:52px;
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:12px;
-    min-height:65px;
-    border-right:1px solid rgba(225,173,35,.55);
+    gap:8px;
+    border-right:1px solid rgba(225,173,35,.5);
 }
 
 .info-item:last-child{
     border-right:0;
 }
 
-.info-icon{
-    font-size:31px;
+.icon{
+    font-size:23px;
 }
 
-.info-label{
+.label{
     color:#f0b62b;
-    font-size:13px;
+    font-size:9px;
     font-weight:700;
-    margin-bottom:5px;
+    margin-bottom:3px;
 }
 
-.info-value{
-    color:#fff;
-    font-size:16px;
+.value{
+    font-size:12px;
+    line-height:1.25;
 }
 
 /* QUOTE */
 
 .quote{
-    text-align:center;
-    margin:22px auto 0;
     width:90%;
+    margin:17px auto 0;
+    text-align:center;
     color:#e9ae28;
-    font-size:16px;
+    font-size:13px;
     font-style:italic;
+    line-height:1.4;
 }
 
 /* MOBILE */
 
-@media(max-width:700px){
+@media(max-width:600px){
 
     .header{
-        height:66px;
-        padding:0 14px;
+        height:56px;
+        padding:0 13px;
     }
 
-    .logo-name{
-        font-size:17px;
+    .brand{
+        font-size:15px;
     }
 
-    .trophy{
-        font-size:23px;
-    }
-
-    .menu{
-        width:46px;
-        height:42px;
+    .brand span{
+        font-size:20px;
     }
 
     .main{
-        padding:28px 8px 30px;
-    }
-
-    .microphone{
-        display:none;
-    }
-
-    .laurel{
-        display:none;
+        padding:22px 5px 25px;
     }
 
     .lvt{
-        font-size:90px;
+        font-size:78px;
     }
 
-    .competition-title{
-        font-size:32px;
+    .title{
+        font-size:27px;
     }
 
     .date{
-        font-size:25px;
-        padding:7px 25px;
+        font-size:22px;
+        padding:5px 22px;
+    }
+
+    .stars{
+        font-size:19px;
     }
 
     .description{
-        font-size:16px;
+        font-size:14px;
     }
 
     .live-box{
-        width:88%;
-        font-size:18px;
-        padding:9px 12px;
+        font-size:16px;
+        width:86%;
     }
 
     .table-card{
-        width:94%;
-        padding:0 8px 10px;
+        width:96%;
+        padding:0 7px 8px;
     }
 
     thead th{
-        font-size:13px;
+        height:37px;
+        font-size:12px;
     }
 
     tbody td{
-        height:47px;
+        height:40px;
     }
 
     .rank{
-        font-size:18px;
+        font-size:15px;
     }
 
-    .name-box{
+    .contestant{
         width:94%;
-        height:32px;
+        height:29px;
     }
 
-    .name-box input{
-        font-size:11px;
+    .contestant input{
+        font-size:10px;
     }
 
-    .points-box{
-        width:55px;
-        height:32px;
-    }
-
-    .points-box input{
-        font-size:17px;
+    .points{
+        font-size:14px;
     }
 
     .info{
-        width:94%;
+        width:96%;
         grid-template-columns:1fr 1fr;
-        padding:8px;
+        padding:5px;
     }
 
     .info-item{
-        min-height:78px;
+        min-height:58px;
         justify-content:flex-start;
-        padding:8px;
-        border-bottom:1px solid rgba(225,173,35,.4);
+        padding:6px;
+        border-bottom:1px solid rgba(225,173,35,.35);
     }
 
     .info-item:nth-child(2),
@@ -557,23 +405,22 @@ tbody td:last-child{
         border-bottom:0;
     }
 
-    .info-icon{
-        font-size:25px;
+    .icon{
+        font-size:20px;
     }
 
-    .info-label{
-        font-size:9px;
+    .label{
+        font-size:8px;
     }
 
-    .info-value{
-        font-size:12px;
+    .value{
+        font-size:10px;
     }
 
     .quote{
-        font-size:14px;
+        font-size:12px;
     }
 }
-
 </style>
 </head>
 
@@ -581,8 +428,8 @@ tbody td:last-child{
 
 <header class="header">
 
-    <div class="logo-name">
-        <span class="trophy">🏆</span>
+    <div class="brand">
+        <span>🏆</span>
         LYRICS VIBES TEAM
     </div>
 
@@ -597,37 +444,19 @@ tbody td:last-child{
 
 <main class="main">
 
-    <div class="microphone">
-        <div class="mic-body"></div>
-        <div class="mic-line"></div>
-        <div class="mic-neck"></div>
-        <div class="mic-base"></div>
-    </div>
+    <div class="lvt">LVT</div>
 
-
-    <div class="laurel">❯</div>
-    <div class="laurel right">❯</div>
-
-
-    <div class="lvt">
-        LVT
-    </div>
-
-
-    <h1 class="competition-title">
+    <h1 class="title">
         LYRICS COMPETITION
     </h1>
-
 
     <div class="date">
         5/9/2026
     </div>
 
-
     <div class="stars">
         — ★ ★ ★ ★ ★ —
     </div>
-
 
     <p class="description">
         A platform to showcase creativity, talent and<br>
@@ -636,7 +465,7 @@ tbody td:last-child{
 
 
     <div class="live-box">
-        <span class="live-circle"></span>
+        <span class="live-dot"></span>
         LIVE COMPETITION
     </div>
 
@@ -667,41 +496,37 @@ tbody td:last-child{
     <section class="info">
 
         <div class="info-item">
-            <div class="info-icon">📅</div>
-
+            <div class="icon">📅</div>
             <div>
-                <div class="info-label">DATE</div>
-                <div class="info-value">5/9/2026</div>
+                <div class="label">DATE</div>
+                <div class="value">5/9/2026</div>
             </div>
         </div>
 
 
         <div class="info-item">
-            <div class="info-icon">◷</div>
-
+            <div class="icon">◷</div>
             <div>
-                <div class="info-label">STATUS</div>
-                <div class="info-value">LIVE NOW</div>
+                <div class="label">STATUS</div>
+                <div class="value">LIVE NOW</div>
             </div>
         </div>
 
 
         <div class="info-item">
-            <div class="info-icon">🏆</div>
-
+            <div class="icon">🏆</div>
             <div>
-                <div class="info-label">TOTAL CONTESTANTS</div>
-                <div class="info-value">16</div>
+                <div class="label">TOTAL CONTESTANTS</div>
+                <div class="value">16</div>
             </div>
         </div>
 
 
         <div class="info-item">
-            <div class="info-icon">🎁</div>
-
+            <div class="icon">🎁</div>
             <div>
-                <div class="info-label">WINNER REWARD</div>
-                <div class="info-value">
+                <div class="label">WINNER REWARD</div>
+                <div class="value">
                     Exciting Prizes<br>
                     & Recognition
                 </div>
@@ -724,35 +549,21 @@ const contestants = document.getElementById("contestants");
 
 for(let i = 1; i <= 16; i++){
 
-    contestants.innerHTML += `
-        <tr>
+    const row = document.createElement("tr");
 
-            <td class="rank">
-                ${i}
-            </td>
+    row.innerHTML = `
+        <td class="rank">${i}</td>
 
-            <td>
-                <div class="name-box">
-                    <input
-                        type="text"
-                        aria-label="Contestant ${i}"
-                    >
-                </div>
-            </td>
+        <td>
+            <div class="contestant">
+                <input type="text">
+            </div>
+        </td>
 
-            <td>
-                <div class="points-box">
-                    <input
-                        type="text"
-                        value="-"
-                        aria-label="Points ${i}"
-                    >
-                </div>
-            </td>
-
-        </tr>
+        <td class="points">-</td>
     `;
 
+    contestants.appendChild(row);
 }
 
 </script>
