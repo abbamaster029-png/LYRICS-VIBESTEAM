@@ -1,2 +1,263 @@
-# LYRICS-VIBESTEAM
-Lvt
+<section class="live-competition">
+
+    <div class="live-container">
+
+        <div class="live-hero">
+
+            <h1>LVT</h1>
+
+            <h2>LYRICS COMPETITION</h2>
+
+            <div class="live-date">
+                5/9/2026
+            </div>
+
+            <div class="live-stars">
+                ★ ★ ★ ★ ★
+            </div>
+
+            <p class="live-description">
+                A platform to showcase creativity, talent and
+                passion for lyrics.
+            </p>
+
+        </div>
+
+
+        <div class="live-title">
+
+            <span class="live-dot"></span>
+
+            LIVE COMPETITION
+
+        </div>
+
+
+        <div class="scoreboard">
+
+            <div class="score-inner">
+
+                <div class="score-head">
+
+                    <div>RANK</div>
+                    <div>CONTESTANT</div>
+                    <div>POINTS</div>
+
+                </div>
+
+
+                <div class="score-row">
+                    <div class="rank">1</div>
+                    <div class="contestant">
+                        <input class="name-field" type="text" placeholder="">
+                    </div>
+                    <div class="points">-</div>
+                </div>
+
+                <div class="score-row">
+                    <div class="rank">2</div>
+                    <div class="contestant">
+                        <input class="name-field" type="text">
+                    </div>
+                    <div class="points">-</div>
+                </div>
+
+                <div class="score-row">
+                    <div class="rank">3</div>
+                    <div class="contestant">
+                        <input class="name-field" type="text">
+                    </div>
+                    <div class="points">-</div>
+                </div>
+
+                <div class="score-row">
+                    <div class="rank">4</div>
+                    <div class="contestant">
+                        <input class="name-field" type="text">
+                    </div>
+                    <div class="points">-</div>
+                </div>
+
+                <div class="score-row">
+                    <div class="rank">5</div>
+                    <div class="contestant">
+                        <input class="name-field" type="text">
+                    </div>
+                    <div class="points">-</div>
+                </div>
+
+                <div class="score-row">
+                    <div class="rank">6</div>
+                    <div class="contestant">
+                        <input class="name-field" type="text">
+                    </div>
+                    <div class="points">-</div>
+                </div>
+
+                <div class="score-row">
+                    <div class="rank">7</div>
+                    <div class="contestant">
+                        <input class="name-field" type="text">
+                    </div>
+                    <div class="points">-</div>
+                </div>
+
+                <div class="score-row">
+                    <div class="rank">8</div>
+                    <div class="contestant">
+                        <input class="name-field" type="text">
+                    </div>
+                    <div class="points">-</div>
+                </div>
+
+                <div class="score-row">
+                    <div class="rank">9</div>
+                    <div class="contestant">
+                        <input class="name-field" type="text">
+                    </div>
+                    <div class="points">-</div>
+                </div>
+
+                <div class="score-row">
+                    <div class="rank">10</div>
+                    <div class="contestant">
+                        <input class="name-field" type="text">
+                    </div>
+                    <div class="points">-</div>
+                </div>
+
+                <div class="score-row">
+                    <div class="rank">11</div>
+                    <div class="contestant">
+                        <input class="name-field" type="text">
+                    </div>
+                    <div class="points">-</div>
+                </div>
+
+                <div class="score-row">
+                    <div class="rank">12</div>
+                    <div class="contestant">
+                        <input class="name-field" type="text">
+                    </div>
+                    <div class="points">-</div>
+                </div>
+
+                <div class="score-row">
+                    <div class="rank">13</div>
+                    <div class="contestant">
+                        <input class="name-field" type="text">
+                    </div>
+                    <div class="points">-</div>
+                </div>
+
+                <div class="score-row">
+                    <div class="rank">14</div>
+                    <div class="contestant">
+                        <input class="name-field" type="text">
+                    </div>
+                    <div class="points">-</div>
+                </div>
+
+                <div class="score-row">
+                    <div class="rank">15</div>
+                    <div class="contestant">
+                        <input class="name-field" type="text">
+                    </div>
+                    <div class="points">-</div>
+                </div>
+
+                <div class="score-row">
+                    <div class="rank">16</div>
+                    <div class="contestant">
+                        <input class="name-field" type="text">
+                    </div>
+                    <div class="points">-</div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="live-info">
+
+            <div class="live-info-item">
+
+                <div class="live-info-icon">📅</div>
+
+                <div>
+                    <div class="live-info-label">
+                        Date
+                    </div>
+
+                    <div class="live-info-value">
+                        5/9/2026
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="live-info-item">
+
+                <div class="live-info-icon">◷</div>
+
+                <div>
+                    <div class="live-info-label">
+                        Status
+                    </div>
+
+                    <div class="live-info-value">
+                        LIVE NOW
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="live-info-item">
+
+                <div class="live-info-icon">🏆</div>
+
+                <div>
+                    <div class="live-info-label">
+                        Total Contestants
+                    </div>
+
+                    <div class="live-info-value">
+                        16
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="live-info-item">
+
+                <div class="live-info-icon">🎁</div>
+
+                <div>
+                    <div class="live-info-label">
+                        Winner Reward
+                    </div>
+
+                    <div class="live-info-value">
+                        Exciting Prizes & Recognition
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="live-quote">
+
+            “Creativity is intelligence having fun.
+            Let your lyrics speak and inspire the world.”
+
+        </div>
+
+    </div>
+
+</section>
