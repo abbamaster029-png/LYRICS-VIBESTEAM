@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LYRICS VIBES TEAM | Abbas Kachalla Bukar</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:
+    radial-gradient(circle at top,#1d477d 0%,#0d2b55 35%,#061a37 70%,#020a18 100%);
+    color:#fff;
+    min-height:100vh;
+    padding:20px 12px;
+}
+
+.page{
+    width:100%;
+    max-width:380px;
+    margin:auto;
+}
+
+.card{
+    background:rgba(3,21,45,.94);
+    border:1px solid rgba(224,173,34,.45);
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+
+.top{
+    padding:20px 18px 16px;
+    text-align:center;
+    border-bottom:1px solid rgba(224,173,34,.18);
+}
+
+.logo{
+    width:58px;
+    height:58px;
+    margin:auto;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#f2c43d,#b9860b);
+    color:#03152d;
+    font-family:'Playfair Display',serif;
+    font-size:22px;
+    font-weight:700;
+    box-shadow:0 0 25px rgba(242,196,61,.25);
+}
+
+.team{
+    margin-top:10px;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:1.5px;
+    color:#f2c43d;
+}
+
+.subtitle{
+    margin-top:4px;
+    font-size:10px;
+    letter-spacing:2px;
+    color:#9fb2ca;
+}
+
+.profile{
+    padding:20px 18px;
+    text-align:center;
+}
+
+.avatar{
+    width:78px;
+    height:78px;
+    margin:auto;
+    border-radius:50%;
+    background:linear-gradient(135deg,#174f8d,#071b36);
+    border:2px solid #e0ad22;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    font-weight:700;
+    color:#f2c43d;
+}
+
+.name{
+    margin-top:12px;
+    font-family:'Playfair Display',serif;
+    font-size:22px;
+    font-weight:700;
+}
+
+.position{
+    margin-top:5px;
+    color:#f2c43d;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.verified{
+    display:inline-flex;
+    align-items:center;
+    gap:5px;
+    margin-top:7px;
+    font-size:10px;
+    color:#a9bdd5;
+}
+
+.dot{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:#35d07f;
+}
+
+.member-meta{
+    margin-top:18px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:9px;
+}
+
+.meta{
+    background:#071f3d;
+    border:1px solid rgba(224,173,34,.15);
+    border-radius:11px;
+    padding:10px 7px;
+}
+
+.meta small{
+    display:block;
+    color:#8da4bf;
+    font-size:9px;
+    margin-bottom:4px;
+}
+
+.meta strong{
+    color:#fff;
+    font-size:11px;
+}
+
+.private{
+    margin:0 18px 18px;
+    padding:16px;
+    border-radius:14px;
+    background:rgba(255,255,255,.035);
+    border:1px solid rgba(224,173,34,.18);
+}
+
+.private-title{
+    display:flex;
+    align-items:center;
+    gap:7px;
+    color:#f2c43d;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.private-sub{
+    margin-top:5px;
+    color:#849bb5;
+    font-size:10px;
+}
+
+.password-box{
+    margin-top:12px;
+    display:flex;
+    gap:7px;
+}
+
+.password-box input{
+    flex:1;
+    min-width:0;
+    background:#020e20;
+    color:#fff;
+    border:1px solid #27476d;
+    border-radius:9px;
+    padding:10px;
+    outline:none;
+    font-size:11px;
+}
+
+.password-box button{
+    border:0;
+    border-radius:9px;
+    padding:0 13px;
+    background:#e0ad22;
+    color:#03152d;
+    font-weight:700;
+    cursor:pointer;
+}
+
+#privateInfo{
+    display:none;
+    margin-top:14px;
+}
+
+.info{
+    display:grid;
+    gap:8px;
+}
+
+.info-row{
+    background:#061a32;
+    padding:9px;
+    border-radius:8px;
+    border:1px solid rgba(255,255,255,.05);
+}
+
+.info-row span{
+    display:block;
+    color:#8098b2;
+    font-size:9px;
+    margin-bottom:3px;
+}
+
+.info-row strong{
+    font-size:11px;
+    line-height:1.5;
+    word-break:break-word;
+}
+
+.qr-section{
+    margin:0 18px 18px;
+    text-align:center;
+    padding:16px;
+    border-radius:14px;
+    background:#fff;
+    color:#03152d;
+}
+
+.qr-title{
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:12px;
+}
+
+#qrcode{
+    display:flex;
+    justify-content:center;
+}
+
+.qr-note{
+    margin-top:9px;
+    font-size:9px;
+    color:#66788d;
+}
+
+.footer{
+    text-align:center;
+    padding:13px;
+    border-top:1px solid rgba(224,173,34,.12);
+    color:#6f849d;
+    font-size:9px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="card">
+
+<div class="top">
+    <div class="logo">LV</div>
+    <div class="team">LYRICS VIBES TEAM</div>
+    <div class="subtitle">OFFICIAL MEMBER PROFILE</div>
+</div>
+
+<div class="profile">
+
+    <div class="avatar">A</div>
+
+    <div class="name">ABBAS KACHALLA BUKAR</div>
+
+    <div class="position">MEMBER</div>
+
+    <div class="verified">
+        <span class="dot"></span>
+        Verified Member
+    </div>
+
+    <div class="member-meta">
+
+        <div class="meta">
+            <small>MEMBER ID</small>
+            <strong>LVT030</strong>
+        </div>
+
+        <div class="meta">
+            <small>STATUS</small>
+            <strong>ACTIVE</strong>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="private">
+
+    <div class="private-title">
+        🔒 PRIVATE INFORMATION
+    </div>
+
+    <div class="private-sub">
+        Authorized access only
+    </div>
+
+    <div class="password-box">
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter password"
+        >
+
+        <button onclick="unlockInfo()">VIEW</button>
+
+    </div>
+
+    <div id="privateInfo">
+
+        <div class="info">
+
+            <div class="info-row">
+                <span>FULL NAME</span>
+                <strong>ABBAS KACHALLA BUKAR</strong>
+            </div>
+
+            <div class="info-row">
+                <span>USERNAME</span>
+                <strong>abbaslyrics4</strong>
+            </div>
+
+            <div class="info-row">
+                <span>PHONE</span>
+                <strong>09133222772</strong>
+            </div>
+
+            <div class="info-row">
+                <span>EMAIL</span>
+                <strong>bukarabbaskachalla@gmail.com</strong>
+            </div>
+
+            <div class="info-row">
+                <span>AGE</span>
+                <strong>22</strong>
+            </div>
+
+            <div class="info-row">
+                <span>COUNTRY</span>
+                <strong>Nigeria 🇳🇬</strong>
+            </div>
+
+            <div class="info-row">
+                <span>SECTION</span>
+                <strong>Both Lyrics and Graphics</strong>
+            </div>
+
+            <div class="info-row">
+                <span>WHY HE JOINED</span>
+                <strong>Better experiences</strong>
+            </div>
+
+            <div class="info-row">
+                <span>COMPETITION EXPERIENCE</span>
+                <strong>No, I have no previous competition experience.</strong>
+            </div>
+
+            <div class="info-row">
+                <span>ABOUT HIM</span>
+                <strong>Angry guy but happy when with loved ones.</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="qr-section">
+
+    <div class="qr-title">
+        SCAN MEMBER PROFILE
+    </div>
+
+    <div id="qrcode"></div>
+
+    <div class="qr-note">
+        Scan to open this member profile
+    </div>
+
+</div>
+
+<div class="footer">
+    © LYRICS VIBES TEAM • OFFICIAL MEMBER PROFILE
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function unlockInfo(){
+
+    const password =
+        document.getElementById("password").value;
+
+    if(password === "abbashe"){
+
+        document.getElementById("privateInfo").style.display = "block";
+
+    }else{
+
+        alert("Incorrect password");
+
+    }
+
+}
+
+document.getElementById("password").addEventListener("keydown", function(e){
+
+    if(e.key === "Enter"){
+        unlockInfo();
+    }
+
+});
+
+new QRCode(
+    document.getElementById("qrcode"),
+    {
+        text: window.location.href.split("#")[0],
+        width: 150,
+        height: 150,
+        colorDark: "#03152d",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+    }
+);
+
+</script>
+
+</body>
+</html>
