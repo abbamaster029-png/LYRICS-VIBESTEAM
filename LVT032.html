@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LYRICS VIBES TEAM | LVT032</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    font-family:'Inter',sans-serif;
+    color:#fff;
+    background:
+    radial-gradient(circle at top,#1d477d 0%,#0d2b55 35%,#061a37 70%,#020a18 100%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.page{
+    width:100%;
+    max-width:380px;
+}
+
+.card{
+    background:rgba(3,21,45,.94);
+    border:1px solid rgba(224,173,34,.35);
+    border-radius:22px;
+    padding:22px;
+    box-shadow:0 20px 50px rgba(0,0,0,.45);
+}
+
+.logo{
+    width:65px;
+    height:65px;
+    margin:0 auto 12px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(145deg,#f2c43d,#b98712);
+    color:#03152d;
+    font-family:'Playfair Display',serif;
+    font-size:24px;
+    font-weight:700;
+    border:3px solid #fff;
+}
+
+.team{
+    text-align:center;
+    color:#f2c43d;
+    font-weight:700;
+    letter-spacing:1px;
+    font-size:18px;
+}
+
+.subtitle{
+    text-align:center;
+    font-size:10px;
+    letter-spacing:2px;
+    color:#b9c6d8;
+    margin-top:4px;
+}
+
+.avatar{
+    width:86px;
+    height:86px;
+    margin:20px auto 10px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(145deg,#123e70,#061a37);
+    border:2px solid #e0ad22;
+    font-size:31px;
+    font-weight:700;
+    color:#f2c43d;
+}
+
+.name{
+    text-align:center;
+    font-family:'Playfair Display',serif;
+    font-size:22px;
+    font-weight:700;
+}
+
+.position{
+    text-align:center;
+    color:#f2c43d;
+    font-size:12px;
+    margin-top:4px;
+    letter-spacing:1px;
+}
+
+.verified{
+    display:inline-block;
+    width:8px;
+    height:8px;
+    background:#35d07f;
+    border-radius:50%;
+    margin-left:5px;
+}
+
+.meta{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    margin-top:18px;
+}
+
+.meta-box{
+    background:#071f3d;
+    border:1px solid rgba(224,173,34,.2);
+    border-radius:12px;
+    padding:11px;
+    text-align:center;
+}
+
+.meta-title{
+    font-size:9px;
+    color:#8fa4bf;
+    letter-spacing:1px;
+}
+
+.meta-value{
+    margin-top:4px;
+    font-size:12px;
+    font-weight:600;
+    color:#fff;
+}
+
+.private{
+    margin-top:18px;
+    background:#061a37;
+    border-radius:15px;
+    padding:16px;
+    border:1px solid rgba(224,173,34,.25);
+}
+
+.private-title{
+    color:#f2c43d;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.private-sub{
+    color:#899bb3;
+    font-size:10px;
+    margin-top:4px;
+}
+
+input{
+    width:100%;
+    margin-top:12px;
+    padding:11px 12px;
+    border-radius:9px;
+    border:1px solid #28486b;
+    background:#03152d;
+    color:#fff;
+    outline:none;
+}
+
+input:focus{
+    border-color:#e0ad22;
+}
+
+button{
+    width:100%;
+    margin-top:9px;
+    padding:11px;
+    border:0;
+    border-radius:9px;
+    background:linear-gradient(90deg,#dba91e,#f2c43d);
+    color:#03152d;
+    font-weight:700;
+    cursor:pointer;
+}
+
+#error{
+    color:#ff7272;
+    font-size:10px;
+    text-align:center;
+    margin-top:8px;
+    display:none;
+}
+
+.info{
+    display:none;
+    margin-top:14px;
+    background:#071f3d;
+    border-radius:12px;
+    padding:13px;
+    font-size:11px;
+    line-height:1.7;
+}
+
+.info strong{
+    color:#f2c43d;
+}
+
+.qr-section{
+    margin-top:20px;
+    text-align:center;
+    padding-top:18px;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.qr-title{
+    color:#f2c43d;
+    font-size:10px;
+    letter-spacing:1.5px;
+    font-weight:700;
+}
+
+#qrcode{
+    width:128px;
+    height:128px;
+    background:#fff;
+    padding:8px;
+    border-radius:10px;
+    margin:12px auto 0;
+}
+
+.footer{
+    text-align:center;
+    color:#657891;
+    font-size:9px;
+    margin-top:16px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+<div class="card">
+
+<div class="logo">LV</div>
+
+<div class="team">LYRICS VIBES TEAM</div>
+<div class="subtitle">OFFICIAL MEMBER PROFILE</div>
+
+<div class="avatar">B</div>
+
+<div class="name">
+BASHIR BUKAR
+<span class="verified"></span>
+</div>
+
+<div class="position">MEMBER</div>
+
+<div class="meta">
+
+<div class="meta-box">
+<div class="meta-title">MEMBER ID</div>
+<div class="meta-value">LVT032</div>
+</div>
+
+<div class="meta-box">
+<div class="meta-title">STATUS</div>
+<div class="meta-value">ACTIVE</div>
+</div>
+
+</div>
+
+<div class="private">
+
+<div class="private-title">🔒 PRIVATE INFORMATION</div>
+<div class="private-sub">Authorized access only</div>
+
+<input
+type="password"
+id="password"
+placeholder="Enter member password"
+>
+
+<button onclick="unlockInfo()">VIEW PROFILE</button>
+
+<div id="error">Incorrect password</div>
+
+<div class="info" id="info">
+
+<strong>Full Name:</strong> Bashir Bukar<br>
+
+<strong>Username:</strong> Bash Lyrics<br>
+
+<strong>Phone:</strong> 08033234530<br>
+
+<strong>Email:</strong> kingbashlyrics@gmail.com<br>
+
+<strong>Age:</strong> 23<br>
+
+<strong>Country:</strong> Nigeria<br>
+
+<strong>Section:</strong> I want to see new update for lyrics<br>
+
+<strong>Why Join:</strong> I want to improve my knowledge of lyrics.<br>
+
+<strong>Previous Competition:</strong> Yes<br>
+
+<strong>About:</strong> I'm a simple man
+
+</div>
+
+</div>
+
+<div class="qr-section">
+
+<div class="qr-title">SCAN MEMBER PROFILE</div>
+
+<div id="qrcode"></div>
+
+</div>
+
+<div class="footer">
+LYRICS VIBES TEAM © 2026
+</div>
+
+</div>
+</div>
+
+<script>
+
+function unlockInfo(){
+
+    const password = document.getElementById("password").value;
+    const info = document.getElementById("info");
+    const error = document.getElementById("error");
+
+    if(password === "bashhh"){
+
+        info.style.display = "block";
+        error.style.display = "none";
+
+    }else{
+
+        info.style.display = "none";
+        error.style.display = "block";
+
+    }
+}
+
+document.getElementById("password").addEventListener("keypress",function(e){
+
+    if(e.key === "Enter"){
+        unlockInfo();
+    }
+
+});
+
+new QRCode(document.getElementById("qrcode"),{
+    text:window.location.href.split("#")[0],
+    width:112,
+    height:112,
+    colorDark:"#03152d",
+    colorLight:"#ffffff",
+    correctLevel:QRCode.CorrectLevel.H
+});
+
+</script>
+
+</body>
+</html>
